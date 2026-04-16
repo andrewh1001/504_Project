@@ -1,7 +1,7 @@
 **/test
-**/train
+**/train*/
 **/valid
-*.zip
 /__pycache__
 data.yaml
 *.mp4
+**/val*/

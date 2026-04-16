@@ -2,7 +2,7 @@ import cv2
 import json
 import numpy as np
 
-video_path = "bell3.mp4"
+video_path = "files/bell3.mp4"
 cap = cv2.VideoCapture(video_path)
 ret, frame = cap.read()
 cap.release()
@@ -351,7 +351,7 @@ while True:
             "stop_lines":     stop_lines,
             "bulb_radius":    BULB_RADIUS,
         }
-        with open("selected_regions.json", "w") as f:
+        with open(f"files/{video_path}/selected_regions.json", "w") as f:
             json.dump(data, f, indent=2)
         print("Saved to selected_regions.json")
 

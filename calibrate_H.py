@@ -3,9 +3,9 @@ import json
 import numpy as np
 
 video = "bell"
-VIDEO_PATH = f"{video}.mp4"
-SATELLITE_PATH = f"{video}.png"
-OUTPUT_PATH = f"homography_{video}_1.json"
+VIDEO_PATH = f"files/{video}.mp4"
+SATELLITE_PATH = f"files/{video}.png"
+OUTPUT_PATH = f"files/homography_{video}.json"
 MIN_POINTS = 4
 
 cap = cv2.VideoCapture(VIDEO_PATH)

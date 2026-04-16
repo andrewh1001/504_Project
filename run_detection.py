@@ -7,7 +7,7 @@ from ultralytics import YOLO
 print("Starting")
 video_path = "bell3"
 model = YOLO("/runs/detect/best/weights/best.pt")
-cap = cv2.VideoCapture(f"{video_path}.mp4")
+cap = cv2.VideoCapture(f"/files/{video_path}.mp4")
 
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
